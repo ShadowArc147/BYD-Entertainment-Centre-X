@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#000000"
+    android:padding="32dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_title"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:fontFamily="sans-serif-thin"
+        android:letterSpacing="0.3"
+        android:layout_marginBottom="48dp"
+        android:alpha="0.8"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="5"
+        android:baselineAligned="false">
+
+        <!-- Netflix Tile -->
+        <FrameLayout
+            android:id="@+id/btn_netflix"
+            android:layout_width="0dp"
+            android:layout_height="320dp"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/tile_background"
+            android:clipToOutline="true"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/logo_netflix"
+                android:alpha="0.7"
+                android:contentDescription="@string/netflix"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:padding="16dp"
+                android:text="@string/netflix"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textAllCaps="true"
+                android:letterSpacing="0.1"
+                android:gravity="center"
+                android:background="#B3000000"/>
+        </FrameLayout>
+
+        <!-- Prime Video Tile -->
+        <FrameLayout
+            android:id="@+id/btn_prime"
+            android:layout_width="0dp"
+            android:layout_height="320dp"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/tile_background"
+            android:clipToOutline="true"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/logo_prime"
+                android:alpha="0.7"
+                android:contentDescription="@string/prime_video"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:padding="16dp"
+                android:text="@string/prime_video"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textAllCaps="true"
+                android:letterSpacing="0.1"
+                android:gravity="center"
+                android:background="#B3000000"/>
+        </FrameLayout>
+
+        <!-- Disney Plus Tile -->
+        <FrameLayout
+            android:id="@+id/btn_disney"
+            android:layout_width="0dp"
+            android:layout_height="320dp"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/tile_background"
+            android:clipToOutline="true"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/logo_disney"
+                android:alpha="0.7"
+                android:contentDescription="@string/disney_plus"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:padding="16dp"
+                android:text="@string/disney_plus"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textAllCaps="true"
+                android:letterSpacing="0.1"
+                android:gravity="center"
+                android:background="#B3000000"/>
+        </FrameLayout>
+
+        <!-- YouTube Tile -->
+        <FrameLayout
+            android:id="@+id/btn_youtube"
+            android:layout_width="0dp"
+            android:layout_height="320dp"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/tile_background"
+            android:clipToOutline="true"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/logo_youtube"
+                android:alpha="0.7"
+                android:contentDescription="@string/youtube"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:padding="16dp"
+                android:text="@string/youtube"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textAllCaps="true"
+                android:letterSpacing="0.1"
+                android:gravity="center"
+                android:background="#B3000000"/>
+        </FrameLayout>
+
+        <!-- Crunchyroll Tile -->
+        <FrameLayout
+            android:id="@+id/btn_crunchyroll"
+            android:layout_width="0dp"
+            android:layout_height="320dp"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/tile_background"
+            android:clipToOutline="true"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/logo_crunchyroll"
+                android:alpha="0.7"
+                android:contentDescription="@string/crunchyroll"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:padding="16dp"
+                android:text="@string/crunchyroll"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textAllCaps="true"
+                android:letterSpacing="0.1"
+                android:gravity="center"
+                android:background="#B3000000"/>
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

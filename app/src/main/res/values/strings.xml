@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BYD Entertainment Centre</string>
+    <string name="netflix">Netflix</string>
+    <string name="prime_video">Prime Video</string>
+    <string name="youtube">YouTube</string>
+    <string name="crunchyroll">Crunchyroll</string>
+    <string name="disney_plus">Disney+</string>
+    <string name="welcome_title">BYD ENTERTAINMENT CENTRE</string>
+</resources>
