@@ -9,6 +9,8 @@ android {
         version = release(37)
     }
 
+    base.archivesName.set("BYD-E-C")
+
     defaultConfig {
         applicationId = "com.sealion.entertainment"
         minSdk = 24
@@ -24,6 +26,7 @@ android {
             optimization {
                 enable = false
             }
+            signingConfig = signingConfigs.getByName("debug")
         }
     }
     compileOptions {
